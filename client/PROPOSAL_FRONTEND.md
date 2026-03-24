@@ -108,5 +108,5 @@ src/
 4.  **Internacionalización (i18n):** Preparado para múltiples idiomas.
 
 ---
-**Elaborado por:** Gemini CLI / Senior Frontend Architect
+**Elaborado siguiendo las instrucciones de:** Ileana  
 **Fecha:** 23 de Marzo de 2026
