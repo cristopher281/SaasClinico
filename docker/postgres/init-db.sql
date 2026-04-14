@@ -13,8 +13,10 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE TABLE clinicas (
     id_p UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     nombre VARCHAR(150) NOT NULL,
+    nit_ruc VARCHAR(50),
     telefono VARCHAR(20),
     email VARCHAR(150),
+    logo_url VARCHAR(255),
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     deleted_at TIMESTAMP WITH TIME ZONE
 );
@@ -41,7 +43,7 @@ CREATE TABLE usuarios (
     email VARCHAR(150) UNIQUE NOT NULL,
     password TEXT NOT NULL,
     rol VARCHAR(50) CHECK (
-        rol IN ('admin', 'recepcionista', 'doctor', 'paciente')
+        rol IN ('admin', 'recepcionista', 'doctor', 'cajero', 'paciente')
     ),
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     deleted_at TIMESTAMP WITH TIME ZONE
@@ -50,6 +52,7 @@ CREATE TABLE usuarios (
 CREATE TABLE pacientes (
     id_p UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     id_clinica UUID NOT NULL REFERENCES clinicas(id_p) ON DELETE CASCADE,
+    nombre VARCHAR(200) NOT NULL,
     cedula VARCHAR(50) NOT NULL,
     fecha_nacimiento DATE,
     sexo VARCHAR(20),
@@ -121,6 +124,8 @@ CREATE TABLE laboratorio (
 CREATE TABLE facturas (
     id_p UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     id_cita UUID NOT NULL REFERENCES citas(id_p),
+    numero VARCHAR(50) UNIQUE NOT NULL,
+    concepto TEXT,
     cantidad_pago DECIMAL(12, 2),
     estado VARCHAR(50) DEFAULT 'pendiente',
     fecha TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
@@ -142,6 +147,12 @@ ALTER TABLE usuarios ENABLE ROW LEVEL SECURITY;
 ALTER TABLE pacientes ENABLE ROW LEVEL SECURITY;
 ALTER TABLE doctores ENABLE ROW LEVEL SECURITY;
 ALTER TABLE citas ENABLE ROW LEVEL SECURITY;
+ALTER TABLE consultas ENABLE ROW LEVEL SECURITY;
+ALTER TABLE recetas ENABLE ROW LEVEL SECURITY;
+ALTER TABLE receta_medicamento ENABLE ROW LEVEL SECURITY;
+ALTER TABLE laboratorio ENABLE ROW LEVEL SECURITY;
+ALTER TABLE facturas ENABLE ROW LEVEL SECURITY;
+ALTER TABLE pagos ENABLE ROW LEVEL SECURITY;
 -- Políticas de aislamiento directo (tablas con id_clinica)
 CREATE POLICY clinica_isolation_usuarios ON usuarios USING (
     id_clinica = current_setting('app.current_clinic_id')::UUID
@@ -155,12 +166,66 @@ CREATE POLICY clinica_isolation_doctores ON doctores USING (
 CREATE POLICY clinica_isolation_citas ON citas USING (
     id_clinica = current_setting('app.current_clinic_id')::UUID
 );
+CREATE POLICY clinica_isolation_consultas ON consultas USING (
+    EXISTS (
+        SELECT 1
+        FROM citas c
+        WHERE c.id_p = consultas.id_cita
+          AND c.id_clinica = current_setting('app.current_clinic_id')::UUID
+    )
+);
+CREATE POLICY clinica_isolation_recetas ON recetas USING (
+    EXISTS (
+        SELECT 1
+        FROM consultas c
+        JOIN citas ci ON ci.id_p = c.id_cita
+        WHERE c.id_p = recetas.id_consulta
+          AND ci.id_clinica = current_setting('app.current_clinic_id')::UUID
+    )
+);
+CREATE POLICY clinica_isolation_receta_medicamento ON receta_medicamento USING (
+    EXISTS (
+        SELECT 1
+        FROM recetas r
+        JOIN consultas c ON c.id_p = r.id_consulta
+        JOIN citas ci ON ci.id_p = c.id_cita
+        WHERE r.id_p = receta_medicamento.id_receta
+          AND ci.id_clinica = current_setting('app.current_clinic_id')::UUID
+    )
+);
+CREATE POLICY clinica_isolation_laboratorio ON laboratorio USING (
+    EXISTS (
+        SELECT 1
+        FROM consultas c
+        JOIN citas ci ON ci.id_p = c.id_cita
+        WHERE c.id_p = laboratorio.id_consulta
+          AND ci.id_clinica = current_setting('app.current_clinic_id')::UUID
+    )
+);
+CREATE POLICY clinica_isolation_facturas ON facturas USING (
+    EXISTS (
+        SELECT 1
+        FROM citas c
+        WHERE c.id_p = facturas.id_cita
+          AND c.id_clinica = current_setting('app.current_clinic_id')::UUID
+    )
+);
+CREATE POLICY clinica_isolation_pagos ON pagos USING (
+    EXISTS (
+        SELECT 1
+        FROM facturas f
+        JOIN citas c ON c.id_p = f.id_cita
+        WHERE f.id_p = pagos.id_factura
+          AND c.id_clinica = current_setting('app.current_clinic_id')::UUID
+    )
+);
 -- ============================================================
 -- 6. ÍNDICES DE RENDIMIENTO
 -- ============================================================
 -- Índices por tenant (consultas frecuentes filtradas por clínica)
 CREATE INDEX idx_usuarios_clinica ON usuarios(id_clinica);
 CREATE INDEX idx_pacientes_clinica ON pacientes(id_clinica);
+CREATE INDEX idx_pacientes_nombre ON pacientes(nombre);
 CREATE INDEX idx_doctores_clinica ON doctores(id_clinica);
 CREATE INDEX idx_citas_clinica ON citas(id_clinica);
 -- Índices de relación (JOINs frecuentes)
@@ -174,6 +239,7 @@ CREATE INDEX idx_receta_med_receta ON receta_medicamento(id_receta);
 CREATE INDEX idx_receta_med_medicamento ON receta_medicamento(id_medicamento);
 CREATE INDEX idx_laboratorio_consulta ON laboratorio(id_consulta);
 CREATE INDEX idx_facturas_cita ON facturas(id_cita);
+CREATE INDEX idx_facturas_numero ON facturas(numero);
 CREATE INDEX idx_pagos_factura ON pagos(id_factura);
 -- Índices de búsqueda
 CREATE INDEX idx_pacientes_cedula ON pacientes(cedula);

@@ -178,6 +178,7 @@ VALUES (
 INSERT INTO pacientes (
         id_p,
         id_clinica,
+        nombre,
         cedula,
         fecha_nacimiento,
         sexo,
@@ -188,6 +189,7 @@ INSERT INTO pacientes (
 VALUES (
         'e1000000-0000-0000-0000-000000000001',
         'a1000000-0000-0000-0000-000000000001',
+        'Juan Perez',
         'CURP-SR001',
         '1985-03-15',
         'Masculino',
@@ -198,6 +200,7 @@ VALUES (
     (
         'e1000000-0000-0000-0000-000000000002',
         'a1000000-0000-0000-0000-000000000001',
+        'Maria Lopez',
         'CURP-SR002',
         '1992-07-22',
         'Femenino',
@@ -208,6 +211,7 @@ VALUES (
     (
         'e1000000-0000-0000-0000-000000000003',
         'a1000000-0000-0000-0000-000000000001',
+        'Pedro Garcia',
         'CURP-SR003',
         '1978-11-08',
         'Masculino',
@@ -218,6 +222,7 @@ VALUES (
     (
         'e1000000-0000-0000-0000-000000000004',
         'a1000000-0000-0000-0000-000000000001',
+        'Carolina Martinez',
         'CURP-SR004',
         '2000-01-30',
         'Femenino',
@@ -228,6 +233,7 @@ VALUES (
     (
         'e1000000-0000-0000-0000-000000000005',
         'a1000000-0000-0000-0000-000000000001',
+        'Ricardo Hernandez',
         'CURP-SR005',
         '1965-09-12',
         'Masculino',
@@ -241,6 +247,7 @@ VALUES (
 INSERT INTO pacientes (
         id_p,
         id_clinica,
+        nombre,
         cedula,
         fecha_nacimiento,
         sexo,
@@ -251,6 +258,7 @@ INSERT INTO pacientes (
 VALUES (
         'e2000000-0000-0000-0000-000000000001',
         'a1000000-0000-0000-0000-000000000002',
+        'Gabriela Rios',
         'CURP-BN001',
         '1990-05-20',
         'Femenino',
@@ -261,6 +269,7 @@ VALUES (
     (
         'e2000000-0000-0000-0000-000000000002',
         'a1000000-0000-0000-0000-000000000002',
+        'Andres Soto',
         'CURP-BN002',
         '1988-12-03',
         'Masculino',
@@ -560,28 +569,36 @@ VALUES (
 -- ============================================================
 -- 16. FACTURAS
 -- ============================================================
-INSERT INTO facturas (id_p, id_cita, cantidad_pago, estado)
+INSERT INTO facturas (id_p, id_cita, numero, concepto, cantidad_pago, estado)
 VALUES (
         'ee100000-0000-0000-0000-000000000001',
         'aa100000-0000-0000-0000-000000000001',
+        'FAC-20260310-0001',
+        'Consulta medicina general',
         800.00,
         'pagada'
     ),
     (
         'ee100000-0000-0000-0000-000000000002',
         'aa100000-0000-0000-0000-000000000002',
+        'FAC-20260311-0002',
+        'Consulta cardiologia',
         1500.00,
         'pagada'
     ),
     (
         'ee100000-0000-0000-0000-000000000003',
         'aa100000-0000-0000-0000-000000000003',
+        'FAC-20260312-0003',
+        'Control de hipertension y diabetes',
         900.00,
         'parcial'
     ),
     (
         'ee200000-0000-0000-0000-000000000001',
         'aa200000-0000-0000-0000-000000000001',
+        'FAC-20260314-0004',
+        'Control prenatal',
         1200.00,
         'pendiente'
     );

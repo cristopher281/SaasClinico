@@ -1,0 +1,2333 @@
+
+> client@0.1.0 dev
+> next dev --port 3001
+
+▲ Next.js 16.2.2 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://10.106.125.200:3001
+- Environments: .env
+✓ Ready in 4.3s
+
+○ Compiling /login ...
+○ Compiling / ...
+ GET / 200 in 6.2s (next.js: 4.5s, application-code: 1633ms)
+ GET / 200 in 488ms (next.js: 22ms, application-code: 466ms)
+ GET /login 200 in 1540ms (next.js: 63ms, application-code: 1477ms)
+○ Compiling /app ...
+ GET /app 200 in 6.4s (next.js: 6.1s, application-code: 284ms)
+ GET /login 200 in 4.3s (next.js: 884ms, application-code: 3.4s)
+✓ Compiled in 5s
+✓ Compiled in 229ms
+✓ Compiled in 815ms
+ GET /login 200 in 13.5s (next.js: 7.2s, application-code: 6.3s)
+ GET /login 200 in 641ms (next.js: 27ms, application-code: 614ms)
+ GET /app 200 in 10.0s (next.js: 8.4s, application-code: 1594ms)
+ GET / 200 in 2.7s (next.js: 276ms, application-code: 2.4s)
+ GET /login 200 in 661ms (next.js: 30ms, application-code: 631ms)
+ GET /app 200 in 4.9s (next.js: 3.5s, application-code: 1409ms)
+ GET /app 200 in 1219ms (next.js: 581ms, application-code: 638ms)
+ GET /login 200 in 779ms (next.js: 313ms, application-code: 466ms)
+ GET /login 200 in 301ms (next.js: 19ms, application-code: 281ms)
+ GET /login 200 in 370ms (next.js: 37ms, application-code: 333ms)
+ GET /app 200 in 235ms (next.js: 48ms, application-code: 186ms)
+⨯ ./src/app/login/page.tsx:1:1
+Module not found: Can't resolve '@/components/auth-panel'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mAuthPanel[0m } [36mfrom[0m [32m"@/components/auth-panel"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mLoginPage[0m() {
+  [90m4 |[0m   [36mreturn[0m <[33mAuthPanel[0m />;
+
+Import map: aliased to relative './src/components/auth-panel' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/login/page.tsx:1:1
+Module not found: Can't resolve '@/components/auth-panel'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mAuthPanel[0m } [36mfrom[0m [32m"@/components/auth-panel"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mLoginPage[0m() {
+  [90m4 |[0m   [36mreturn[0m <[33mAuthPanel[0m />;
+
+Import map: aliased to relative './src/components/auth-panel' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/app/page.tsx:1:1
+Module not found: Can't resolve '@/components/clinic-app'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mClinicApp[0m } [36mfrom[0m [32m"@/components/clinic-app"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mAppPage[0m() {
+  [90m4 |[0m   [36mreturn[0m <[33mClinicApp[0m />;
+
+Import map: aliased to relative './src/components/clinic-app' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/app/page.tsx:1:1
+Module not found: Can't resolve '@/components/clinic-app'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mClinicApp[0m } [36mfrom[0m [32m"@/components/clinic-app"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mAppPage[0m() {
+  [90m4 |[0m   [36mreturn[0m <[33mClinicApp[0m />;
+
+Import map: aliased to relative './src/components/clinic-app' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+✓ Compiled in 3s
+✓ Compiled in 481ms
+✓ Compiled in 2.2s
+✓ Compiled in 559ms
+ GET /login 200 in 14.1s (next.js: 10.8s, application-code: 3.3s)
+○ Compiling /app/resumen ...
+ GET /app/resumen 200 in 5.6s (next.js: 5.2s, application-code: 403ms)
+ GET /app/recepcion 200 in 2.2s (next.js: 2.1s, application-code: 135ms)
+✓ Compiled in 1921ms
+✓ Compiled in 2.4s
+⨯ ./src/app/app/recepcion/page.tsx:1:1
+Module not found: Can't resolve '@/modules/operations/components/clinic-shell'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mClinicShell[0m } [36mfrom[0m [32m"@/modules/operations/components/clinic-shell"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mRecepcionPage[0m() {
+  [90m4 |[0m   [36mreturn[0m <[33mClinicShell[0m />;
+
+Import map: aliased to relative './src/modules/operations/components/clinic-shell' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/app/recepcion/page.tsx:1:1
+Module not found: Can't resolve '@/modules/operations/components/clinic-shell'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mClinicShell[0m } [36mfrom[0m [32m"@/modules/operations/components/clinic-shell"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mRecepcionPage[0m() {
+  [90m4 |[0m   [36mreturn[0m <[33mClinicShell[0m />;
+
+Import map: aliased to relative './src/modules/operations/components/clinic-shell' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/app/resumen/page.tsx:1:1
+Module not found: Can't resolve '@/modules/operations/components/clinic-shell'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mClinicShell[0m } [36mfrom[0m [32m"@/modules/operations/components/clinic-shell"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mResumenPage[0m() {
+  [90m4 |[0m   [36mreturn[0m <[33mClinicShell[0m />;
+
+Import map: aliased to relative './src/modules/operations/components/clinic-shell' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/app/resumen/page.tsx:1:1
+Module not found: Can't resolve '@/modules/operations/components/clinic-shell'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mClinicShell[0m } [36mfrom[0m [32m"@/modules/operations/components/clinic-shell"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mResumenPage[0m() {
+  [90m4 |[0m   [36mreturn[0m <[33mClinicShell[0m />;
+
+Import map: aliased to relative './src/modules/operations/components/clinic-shell' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+✓ Compiled in 13.6s
+✓ Compiled in 17.9s
+⨯ ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/recepcion/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/recepcion/page.tsx [Server Component]
+
+
+[browser] Uncaught TypeError: (0 , __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$operations$2f$model$2f$module$2d$routes$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__.resolveModuleFromPath) is not a function
+    at ClinicShell (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/src_0z-~057._.js:2239:212)
+    at Object.react_stack_bottom_frame (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15037:24)
+    at renderWithHooks (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:4620:24)
+    at updateFunctionComponent (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6081:21)
+    at beginWork (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6691:24)
+    at runWithFiberInDEV (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopSync (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9449:40)
+    at renderRootSync (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9433:13)
+    at performWorkOnRoot (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9098:47)
+    at performSyncWorkOnRoot (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10263:9)
+    at flushSyncWorkAcrossRoots_impl (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10179:316)
+    at flushSyncWork$1 (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9230:86)
+    at Object.scheduleRefresh (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:299:13)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:391:33)
+    at Set.forEach (<anonymous>)
+    at Object.performReactRefresh (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:384:38)
+    at applyUpdate (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:878:31)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:886:13)
+    at RecepcionPage (src\app\app\recepcion\page.tsx:4:10)
+  2 |
+  3 | export default function RecepcionPage() {
+> 4 |   return <ClinicShell />;
+    |          ^
+  5 | }
+  6 |
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export moduleRouteMap doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export moduleRouteMap was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import normalizeRole?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-client] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/operations/components/clinic-shell.tsx:30:1
+Export resolveModuleFromPath doesn't exist in target module
+  28 |   RoleModule,
+  29 | } from "../model/dashboard-types";
+> 30 | import {
+     | ^^^^^^^
+> 31 |   moduleRouteMap,
+     | ^^^^^^^^^^^^^^^^^
+> 32 |   resolveDefaultAppRoute,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |   resolveModuleFromPath,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 | } from "../model/module-routes";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |
+  36 | const modules: Array<{
+  37 |   id: RoleModule;
+
+The export resolveModuleFromPath was not found in module [project]/src/modules/operations/model/module-routes.ts [app-ssr] (ecmascript).
+Did you mean to import resolveSectionFromPath?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/app/app/resumen/page.tsx:1:1
+Module not found: Can't resolve '@/modules/operations/components/clinic-shell'
+> 1 | import { ClinicShell } from "@/modules/operations/components/clinic-shell";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ResumenPage() {
+  4 |   return <ClinicShell />;
+
+Import map: aliased to relative './src/modules/operations/components/clinic-shell' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/app/app/recepcion/page.tsx:1:1
+Module not found: Can't resolve '@/modules/operations/components/clinic-shell'
+> 1 | import { ClinicShell } from "@/modules/operations/components/clinic-shell";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function RecepcionPage() {
+  4 |   return <ClinicShell />;
+
+Import map: aliased to relative './src/modules/operations/components/clinic-shell' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/app/app/resumen/page.tsx:1:1
+Module not found: Can't resolve '@/modules/operations/components/clinic-shell'
+> 1 | import { ClinicShell } from "@/modules/operations/components/clinic-shell";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ResumenPage() {
+  4 |   return <ClinicShell />;
+
+Import map: aliased to relative './src/modules/operations/components/clinic-shell' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/app/app/recepcion/page.tsx:1:1
+Module not found: Can't resolve '@/modules/operations/components/clinic-shell'
+> 1 | import { ClinicShell } from "@/modules/operations/components/clinic-shell";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function RecepcionPage() {
+  4 |   return <ClinicShell />;
+
+Import map: aliased to relative './src/modules/operations/components/clinic-shell' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/app/app/resumen/page.tsx:1:1
+Module not found: Can't resolve '@/modules/operations/components/clinic-shell'
+> 1 | import { ClinicShell } from "@/modules/operations/components/clinic-shell";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ResumenPage() {
+  4 |   return <ClinicShell />;
+
+Import map: aliased to relative './src/modules/operations/components/clinic-shell' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/app/app/recepcion/page.tsx:1:1
+Module not found: Can't resolve '@/modules/operations/components/clinic-shell'
+> 1 | import { ClinicShell } from "@/modules/operations/components/clinic-shell";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function RecepcionPage() {
+  4 |   return <ClinicShell />;
+
+Import map: aliased to relative './src/modules/operations/components/clinic-shell' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+○ Compiling /_error ...
+ GET /app/recepcion 500 in 25.4s (next.js: 21.8s, application-code: 3.6s)
+[browser] Uncaught Error: ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+
+✓ Finished filesystem cache database compaction in 13.6s
+✓ Compiled in 5.1s
+✓ Finished writing to filesystem cache in 10.3s
+ GET /app/recepcion 500 in 2.1s (next.js: 1653ms, application-code: 420ms)
+ GET /app/recepcion 500 in 36ms
+ GET /app/recepcion 500 in 69ms
+ GET /app/recepcion 500 in 486ms (next.js: 54ms, application-code: 433ms)
+[browser] Uncaught Error: ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+
+✓ Compiled in 13.4s
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/shared/lib/router/router.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[browser] ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/modules/admin/components/admin-workspace.tsx
+Reading source code for parsing failed
+An unexpected error happened while trying to read the source code to parse: failed to convert rope into string
+
+Caused by:
+- invalid utf-8 sequence of 1 bytes from index 7900
+
+Import traces:
+  Client Component Browser:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component Browser]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/modules/admin/components/admin-workspace.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Client Component SSR]
+    ./src/modules/operations/components/clinic-shell.tsx [Server Component]
+    ./src/app/app/resumen/page.tsx [Server Component] 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/favicon.ico
+Processing image failed
+unable to decode image data
+
+Caused by:
+- failed to fill whole buffer 
+    at handleErrors (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/DELL/OneDrive/Escritorio/Proyectos de Escritorio/base de datos Saas clinico/client/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+ GET /app/recepcion 307 in 54s (next.js: 47s, application-code: 7.6s)
+○ Compiling /app/[...slug] ...
+ GET /app/recepcion/agenda 200 in 68s (next.js: 67s, application-code: 563ms)
+ GET /app/resumen 200 in 2.1s (next.js: 1557ms, application-code: 565ms)
+ GET /app/clinica 200 in 6.9s (next.js: 3.3s, application-code: 3.6s)
+ GET /app/clinica 200 in 6.1s (next.js: 1138ms, application-code: 5.0s)
+ GET /app/clinica 200 in 3.5s (next.js: 36ms, application-code: 3.5s)
+ GET /app/clinica 200 in 2.3s (next.js: 101ms, application-code: 2.2s)
+ GET /app/staff 200 in 6.3s (next.js: 458ms, application-code: 5.8s)
+✓ Finished filesystem cache database compaction in 14.4s
+⨯ ./src/modules/operations/components/clinic-shell.tsx:7:1
+Module not found: Can't resolve '@/modules/admin/components/admin-workspace'
+  [90m 5 |[0m [36mimport[0m { usePathname, useRouter } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m [36mimport[0m { useEffect, useMemo, useState } [36mfrom[0m [32m"react"[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { [33mAdminWorkspace[0m } [36mfrom[0m [32m"@/modules/admin/components/admin-workspace"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { [33mCashierWorkspace[0m } [36mfrom[0m [32m"@/modules/cashier/components/cashier-workspace"[0m;
+  [90m 9 |[0m [36mimport[0m { [33mReceptionWorkspace[0m } [36mfrom[0m [32m"@/modules/reception/components/reception-workspace"[0m;
+  [90m10 |[0m [36mimport[0m { apiRequest } [36mfrom[0m [32m"@/shared/api/http"[0m;
+
+Import map: aliased to relative './src/modules/admin/components/admin-workspace' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/[...slug]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/modules/operations/components/clinic-shell.tsx:7:1
+Module not found: Can't resolve '@/modules/admin/components/admin-workspace'
+  [90m 5 |[0m [36mimport[0m { usePathname, useRouter } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m [36mimport[0m { useEffect, useMemo, useState } [36mfrom[0m [32m"react"[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { [33mAdminWorkspace[0m } [36mfrom[0m [32m"@/modules/admin/components/admin-workspace"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { [33mCashierWorkspace[0m } [36mfrom[0m [32m"@/modules/cashier/components/cashier-workspace"[0m;
+  [90m 9 |[0m [36mimport[0m { [33mReceptionWorkspace[0m } [36mfrom[0m [32m"@/modules/reception/components/reception-workspace"[0m;
+  [90m10 |[0m [36mimport[0m { apiRequest } [36mfrom[0m [32m"@/shared/api/http"[0m;
+
+Import map: aliased to relative './src/modules/admin/components/admin-workspace' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/[...slug]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/modules/operations/components/clinic-shell.tsx:7:1
+Module not found: Can't resolve '@/modules/admin/components/admin-workspace'
+  [90m 5 |[0m [36mimport[0m { usePathname, useRouter } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m [36mimport[0m { useEffect, useMemo, useState } [36mfrom[0m [32m"react"[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { [33mAdminWorkspace[0m } [36mfrom[0m [32m"@/modules/admin/components/admin-workspace"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { [33mCashierWorkspace[0m } [36mfrom[0m [32m"@/modules/cashier/components/cashier-workspace"[0m;
+  [90m 9 |[0m [36mimport[0m { [33mReceptionWorkspace[0m } [36mfrom[0m [32m"@/modules/reception/components/reception-workspace"[0m;
+  [90m10 |[0m [36mimport[0m { apiRequest } [36mfrom[0m [32m"@/shared/api/http"[0m;
+
+Import map: aliased to relative './src/modules/admin/components/admin-workspace' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/[...slug]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/modules/operations/components/clinic-shell.tsx:7:1
+Module not found: Can't resolve '@/modules/admin/components/admin-workspace'
+  [90m 5 |[0m [36mimport[0m { usePathname, useRouter } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m [36mimport[0m { useEffect, useMemo, useState } [36mfrom[0m [32m"react"[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { [33mAdminWorkspace[0m } [36mfrom[0m [32m"@/modules/admin/components/admin-workspace"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { [33mCashierWorkspace[0m } [36mfrom[0m [32m"@/modules/cashier/components/cashier-workspace"[0m;
+  [90m 9 |[0m [36mimport[0m { [33mReceptionWorkspace[0m } [36mfrom[0m [32m"@/modules/reception/components/reception-workspace"[0m;
+  [90m10 |[0m [36mimport[0m { apiRequest } [36mfrom[0m [32m"@/shared/api/http"[0m;
+
+Import map: aliased to relative './src/modules/admin/components/admin-workspace' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/[...slug]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/modules/operations/components/clinic-shell.tsx:7:1
+Module not found: Can't resolve '@/modules/admin/components/admin-workspace'
+  [90m 5 |[0m [36mimport[0m { usePathname, useRouter } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m [36mimport[0m { useEffect, useMemo, useState } [36mfrom[0m [32m"react"[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { [33mAdminWorkspace[0m } [36mfrom[0m [32m"@/modules/admin/components/admin-workspace"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { [33mCashierWorkspace[0m } [36mfrom[0m [32m"@/modules/cashier/components/cashier-workspace"[0m;
+  [90m 9 |[0m [36mimport[0m { [33mReceptionWorkspace[0m } [36mfrom[0m [32m"@/modules/reception/components/reception-workspace"[0m;
+  [90m10 |[0m [36mimport[0m { apiRequest } [36mfrom[0m [32m"@/shared/api/http"[0m;
+
+Import map: aliased to relative './src/modules/admin/components/admin-workspace' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/modules/operations/components/clinic-shell.tsx:7:1
+Module not found: Can't resolve '@/modules/admin/components/admin-workspace'
+  [90m 5 |[0m [36mimport[0m { usePathname, useRouter } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m [36mimport[0m { useEffect, useMemo, useState } [36mfrom[0m [32m"react"[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { [33mAdminWorkspace[0m } [36mfrom[0m [32m"@/modules/admin/components/admin-workspace"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { [33mCashierWorkspace[0m } [36mfrom[0m [32m"@/modules/cashier/components/cashier-workspace"[0m;
+  [90m 9 |[0m [36mimport[0m { [33mReceptionWorkspace[0m } [36mfrom[0m [32m"@/modules/reception/components/reception-workspace"[0m;
+  [90m10 |[0m [36mimport[0m { apiRequest } [36mfrom[0m [32m"@/shared/api/http"[0m;
+
+Import map: aliased to relative './src/modules/admin/components/admin-workspace' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/modules/operations/components/clinic-shell.tsx:7:1
+Module not found: Can't resolve '@/modules/admin/components/admin-workspace'
+  [90m 5 |[0m [36mimport[0m { usePathname, useRouter } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m [36mimport[0m { useEffect, useMemo, useState } [36mfrom[0m [32m"react"[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { [33mAdminWorkspace[0m } [36mfrom[0m [32m"@/modules/admin/components/admin-workspace"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { [33mCashierWorkspace[0m } [36mfrom[0m [32m"@/modules/cashier/components/cashier-workspace"[0m;
+  [90m 9 |[0m [36mimport[0m { [33mReceptionWorkspace[0m } [36mfrom[0m [32m"@/modules/reception/components/reception-workspace"[0m;
+  [90m10 |[0m [36mimport[0m { apiRequest } [36mfrom[0m [32m"@/shared/api/http"[0m;
+
+Import map: aliased to relative './src/modules/admin/components/admin-workspace' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/modules/operations/components/clinic-shell.tsx:7:1
+Module not found: Can't resolve '@/modules/admin/components/admin-workspace'
+  [90m 5 |[0m [36mimport[0m { usePathname, useRouter } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m [36mimport[0m { useEffect, useMemo, useState } [36mfrom[0m [32m"react"[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { [33mAdminWorkspace[0m } [36mfrom[0m [32m"@/modules/admin/components/admin-workspace"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { [33mCashierWorkspace[0m } [36mfrom[0m [32m"@/modules/cashier/components/cashier-workspace"[0m;
+  [90m 9 |[0m [36mimport[0m { [33mReceptionWorkspace[0m } [36mfrom[0m [32m"@/modules/reception/components/reception-workspace"[0m;
+  [90m10 |[0m [36mimport[0m { apiRequest } [36mfrom[0m [32m"@/shared/api/http"[0m;
+
+Import map: aliased to relative './src/modules/admin/components/admin-workspace' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/modules/operations/components/clinic-shell.tsx
+    ./src/app/app/resumen/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+✓ Compiled in 2.2s

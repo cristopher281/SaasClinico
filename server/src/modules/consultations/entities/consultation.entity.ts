@@ -1,38 +1,38 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, OneToOne, JoinColumn, ManyToOne } from 'typeorm';
-import { Clinic } from '../../clinics/entities/clinic.entity';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  CreateDateColumn,
+  DeleteDateColumn,
+  OneToOne,
+  JoinColumn,
+} from 'typeorm';
 import { Appointment } from '../../appointments/entities/appointment.entity';
 
 @Entity('consultas')
 export class Consultation {
-  @PrimaryGeneratedColumn('uuid')
-  id_consulta: string;
+  @PrimaryGeneratedColumn('uuid', { name: 'id_p' })
+  id: string;
 
-  @Column()
-  id_clinica: string;
-
-  @ManyToOne(() => Clinic)
-  @JoinColumn({ name: 'id_clinica' })
-  clinica: Clinic;
-
-  @Column()
-  id_cita: string;
+  @Column({ name: 'id_cita', type: 'uuid' })
+  appointmentId: string;
 
   @OneToOne(() => Appointment)
   @JoinColumn({ name: 'id_cita' })
-  cita: Appointment;
-
-  @Column({ type: 'text' })
-  motivo_consulta: string;
-
-  @Column({ type: 'text', nullable: true })
-  examen_fisico: string;
+  appointment: Appointment;
 
   @Column({ type: 'text' })
   diagnostico: string;
 
   @Column({ type: 'text', nullable: true })
-  observaciones: string;
+  tratamiento?: string | null;
 
-  @CreateDateColumn()
-  created_at: Date;
+  @Column({ type: 'text', nullable: true })
+  observaciones?: string | null;
+
+  @CreateDateColumn({ name: 'created_at', type: 'timestamptz' })
+  createdAt: Date;
+
+  @DeleteDateColumn({ name: 'deleted_at', type: 'timestamptz', nullable: true })
+  deletedAt?: Date | null;
 }

@@ -1,125 +1,302 @@
-# 🏥 SaaS Gestión Clínica Multi-Especialidad
+# SaaS Clinico
 
-Sistema de gestión modular para clínicas médicas con arquitectura de **Monolito Modular** y aislamiento de datos **Multi-tenant**. 
+Base operativa para un SaaS de gestion clinica multi-tenant con frontend en Next.js, backend en NestJS y PostgreSQL en Docker.
 
-Este proyecto está diseñado para funcionar tanto en entornos locales de desarrollo como en servidores VPS para producción, gestionando la orquestación principalmente a través de contenedores Docker.
+## Estado actual
 
----
+Al 8 de abril de 2026 el proyecto ya tiene una base funcional de extremo a extremo:
 
-## 📁 Estructura del Proyecto
+- `client/` implementado con Next.js App Router.
+- `server/` implementado como modular monolith en NestJS.
+- PostgreSQL levantable con `docker compose`.
+- Autenticacion JWT con registro inicial de clinica.
+- Separacion multi-tenant por clinica en la capa de aplicacion.
+- Flujo operativo cubierto para recepcion, consulta, recetas, laboratorio, caja y administracion basica.
 
-La arquitectura del proyecto está dividida en los siguientes módulos y carpetas principales:
+Verificacion ejecutada sobre el estado actual del repositorio:
+
+- `server`: `npm run build` OK
+- `client`: `npm run build` OK
+- `client`: `npm run lint` OK con warnings menores
+
+## Que ya existe
+
+### Frontend
+
+Aplicacion web en `client/` con rutas funcionales:
+
+- `/login`
+- `/registro-clinica`
+- `/app/resumen`
+- `/app/recepcion`
+- `/app/doctor`
+- `/app/caja`
+- `/app/[...slug]` para vistas operativas adicionales
+
+La estructura interna sigue esta organizacion:
+
+- `src/modules/auth`
+- `src/modules/overview`
+- `src/modules/reception`
+- `src/modules/doctor`
+- `src/modules/billing`
+- `src/modules/cashier`
+- `src/modules/admin`
+- `src/modules/operations`
+- `src/shared`
+
+### Backend
+
+API en `server/` con prefijo global `http://localhost:3000/api`.
+
+Modulos activos:
+
+- `auth`
+- `clinics`
+- `patients`
+- `doctors`
+- `appointments`
+- `consultations`
+- `billing`
+- `medications`
+- `prescriptions`
+- `laboratory`
+- `health`
+
+Capacidades implementadas:
+
+- Registro de clinica y admin maestro
+- Login JWT y endpoint de usuario actual
+- Gestion de staff por clinica
+- Consulta y actualizacion de clinica actual
+- Carga de logo de clinica
+- CRUD de pacientes
+- Agenda de citas
+- Consultas medicas
+- Catalogo de doctores y especialidades
+- Facturacion, pagos parciales y ticket imprimible
+- Catalogo de medicamentos
+- Recetas medicas
+- Ordenes/registros de laboratorio
+
+### Base de datos e infraestructura
+
+En `docker/` ya esta lista la base local:
+
+- PostgreSQL 15
+- `init-db.sql` para esquema inicial
+- `seed-data.sql` para carga base
+- Adminer como perfil opcional de soporte
+
+## Estructura del repositorio
 
 ```text
-SaasClinico/
-├── automation/       # Scripts de automatización y mantenimiento.
-├── client/           # Aplicación Frontend (Next.js, React).
-├── server/           # Aplicación Backend (NestJS, TypeORM).
-├── docker/           # Archivos de la infraestructura (Bases de datos).
-│   ├── docker-compose.yml   # Orquestación de contenedores en la red de Docker.
-│   └── postgres/
-│       ├── init-db.sql      # Schema de la BD (13 tablas + RLS + índices).
-│       └── seed-data.sql    # Scripts con datos realistas de prueba.
-├── docs/             # Documentación técnica extendida del sistema (Ej. RESUMEN.md).
-├── .gitignore        # Reglas para exclusión de archivos pesados de Git.
-└── README.md         # Documentación principal.
+base de datos Saas clinico/
+|-- automation/
+|-- client/
+|-- docker/
+|   |-- docker-compose.yml
+|   `-- postgres/
+|       |-- init-db.sql
+|       `-- seed-data.sql
+|-- docs/
+|-- server/
+`-- README.md
 ```
 
----
+## Requisitos
 
-## 🚀 Fase Actual de Desarrollo: Fase 2 (Backend Core - Multi-Tenancy)
+- Node.js 20+
+- npm
+- Docker Desktop
 
-El desarrollo del núcleo del servidor en **NestJS** ya cuenta con:
-*   **Registros Atómicos**: Flujos controlados para la gestión de clínicas y administradores.
-*   **Seguridad Mutli-Tenant RLS**: Aislamiento a nivel de PostgreSQL gestionado por JWT.
-*   **Módulos Operativos**: Pacientes, citas, consultas, facturación, entre otros.
+## Arranque local
 
----
+### 1. Variables de entorno
 
-## 🛠️ Cómo Inicializar en Desarrollo (Local)
+Copia los archivos de ejemplo:
 
-### 1. Requisitos
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado y en ejecución.
-- Git instalado.
-
-### 2. Pasos
-1. Abre tu terminal.
-2. Clona el proyecto (opcional si ya lo descargaste localmente): `git clone https://github.com/cristopher281/SaasClinico.git`
-3. Ve a la carpeta `docker/` del proyecto.
-4. Ejecuta:
 ```bash
-docker-compose up -d
+cd server
+copy .env.example .env
 ```
-5. Para llenar con datos iniciales (ejecutar desde la raíz del proyecto):
+
 ```bash
-docker cp docker/postgres/seed-data.sql saas_clinico_db:/tmp/seed-data.sql
-docker exec saas_clinico_db psql -U admin -d saas_clinica_db -f /tmp/seed-data.sql
+cd docker
+copy .env.example .env
 ```
 
----
+En `client/` puedes usar:
 
-## 🌍 Guía de Despliegue en VPS (Producción)
-
-Para alojar el sistema SaaS de manera profesional y accesible por internet, un servidor privado virtual (VPS como DigitalOcean, AWS EC2 o Linode) es la mejor opción. 
-
-### Paso 1: Configurar el Entorno del VPS
-1. Conéctate a tu servidor mediante SSH (reemplaza `usuario` y `ip_servidor`):
-   ```bash
-   ssh usuario@ip_servidor
-   ```
-2. Actualiza los paquetes del sistema (en base Debian/Ubuntu):
-   ```bash
-   sudo apt update && sudo apt upgrade -y
-   ```
-3. Instala **Docker** y **Docker Compose**:
-   ```bash
-   sudo apt install docker.io docker-compose git -y
-   ```
-4. Agrega a tu usuario al grupo docker para no tener que usar `sudo` siempre:
-   ```bash
-   sudo usermod -aG docker $USER
-   ```
-   *(Sal y vuelve a entrar por SSH para que esto tome efecto).*
-
-### Paso 2: Clonar y Preparar el Sistema
-Dentro de tu VPS, clona el código fuente oficial:
 ```bash
-git clone https://github.com/cristopher281/SaasClinico.git
-cd SaasClinico
+cd client
+copy .env.example .env
 ```
 
-> **Aviso de Producción:** Antes de levantar el proyecto en producción debes cambiar las credenciales predeterminadas. Puedes modificar contraseñas dentro del archivo `docker/docker-compose.yml`.
+### 2. Levantar PostgreSQL
 
-### Paso 3: Levantar los Servicios en el Servidor
-1. Ingresa a la carpeta Docker:
-   ```bash
-   cd docker
-   ```
-2. Arranca la infraestructura en modo "detach" (segundo plano):
-   ```bash
-   docker-compose up -d
-   ```
-3. Verifica que la base de datos se esté ejecutando:
-   ```bash
-   docker ps
-   ```
-
-### Paso 4: Cargar Semillas de Datos (Opcional en VPS)
-Si esto es un entorno de demostración y te interesa sembrar datos en Producción:
 ```bash
-# Sube el script de los seeds
-docker cp postgres/seed-data.sql saas_clinico_db:/tmp/seed-data.sql
-
-# Ejecútalo internamente
-docker exec saas_clinico_db psql -U admin -d saas_clinica_db -f /tmp/seed-data.sql
+cd docker
+docker compose up -d
 ```
 
-### 🔐 Paso Final y Seguridad (Recomendado)
-*   **Dominios y SSL**: Se recomienda instalar y configurar un proxy reverso (como Nginx o Traefik) bloqueando puertos expuestos para asegurar que el tráfico frontal cruce por HTTPS utilizando **Let's Encrypt**.
-*   **Firewall**: Configura UFW para restringir conexiones únicamente a los puertos esenciales (80, 443, 22).
-   ```bash
-   sudo ufw allow 22
-   sudo ufw allow 80
-   sudo ufw allow 443
-   sudo ufw enable
-   ```
+Si vienes de una version anterior del esquema:
+
+```bash
+cd docker
+docker compose down -v
+docker compose up -d
+```
+
+### 3. Iniciar backend
+
+```bash
+cd server
+npm install
+npm run start:dev
+```
+
+La API queda en:
+
+```text
+http://localhost:3000/api
+```
+
+### 4. Iniciar frontend
+
+```bash
+cd client
+npm install
+npm run dev -- --port 3001
+```
+
+La aplicacion web queda en `http://localhost:3001`.
+
+Si usas otro puerto para el frontend, no hace falta cambiar `NEXT_PUBLIC_API_URL` mientras la API siga corriendo en `http://localhost:3000/api`.
+
+## Variables de entorno principales
+
+### Backend `server/.env`
+
+```env
+NODE_ENV=development
+PORT=3000
+CORS_ORIGIN=*
+
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=admin
+DB_PASSWORD=supersecretpassword
+DB_NAME=saas_clinica_db
+
+JWT_SECRET=replace-with-a-long-random-secret
+JWT_EXPIRES_IN=8h
+
+PRINTER_MODE=disabled
+PRINTER_OUTPUT_DIR=prints
+PRINTER_HOST=127.0.0.1
+PRINTER_PORT=9100
+
+UPLOADS_DIR=uploads
+NOTIFICATIONS_MODE=file
+NOTIFICATIONS_OUTPUT_DIR=outbox
+```
+
+### Frontend `client/.env`
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
+```
+
+### Docker `docker/.env`
+
+```env
+DB_USER=admin
+DB_PASSWORD=supersecretpassword
+DB_NAME=saas_clinica_db
+DB_PORT=5432
+ADMINER_PORT=8080
+```
+
+## Endpoints principales
+
+### Salud y autenticacion
+
+- `GET /api/health`
+- `POST /api/auth/register-clinic`
+- `POST /api/auth/login`
+- `GET /api/auth/me`
+- `GET /api/auth/staff`
+- `POST /api/auth/staff`
+- `PATCH /api/auth/staff/:id`
+- `DELETE /api/auth/staff/:id`
+
+### Clinica
+
+- `GET /api/clinics/current`
+- `PATCH /api/clinics/current`
+- `POST /api/clinics/current/logo`
+
+### Operacion clinica
+
+- `GET /api/doctors`
+- `GET /api/doctors/specialties`
+- CRUD de `patients`
+- CRUD de `appointments`
+- CRUD de `consultations`
+- CRUD de `laboratory`
+- CRUD/listado de `prescriptions`
+- listado de `medications`
+
+### Caja y facturacion
+
+- `POST /api/billing/invoices`
+- `GET /api/billing/invoices`
+- `GET /api/billing/invoices/:id`
+- `PATCH /api/billing/invoices/:id`
+- `POST /api/billing/invoices/:id/payments`
+- `GET /api/billing/invoices/:id/payments`
+- `GET /api/billing/invoices/:id/ticket`
+- `POST /api/billing/invoices/:id/print`
+
+## Impresion de tickets
+
+El backend soporta tres modos:
+
+- `PRINTER_MODE=disabled`: genera preview pero no imprime
+- `PRINTER_MODE=file`: guarda tickets en `PRINTER_OUTPUT_DIR`
+- `PRINTER_MODE=network`: envia ESC/POS a `PRINTER_HOST:PRINTER_PORT`
+
+Para pruebas locales sin impresora fisica:
+
+```env
+PRINTER_MODE=file
+PRINTER_OUTPUT_DIR=prints
+```
+
+## Limitaciones actuales
+
+- El repositorio aun tiene muchos cambios locales sin consolidar en git.
+- El `README` de submodulos y algunas docs pueden ir por delante o por detras del codigo.
+- No hay suite de pruebas automatizadas madura en el backend.
+- El frontend compila y navega, pero todavia requiere estabilizacion funcional completa por rol.
+- `npm run lint` del frontend sigue mostrando warnings menores.
+
+## Documentacion relacionada
+
+- `docs/ARQUITECTURA_SAAS_CLINICO.md`
+- `docs/REQUERIMIENTOS_DISENO_UI.md`
+- `docs/RESUMEN.md`
+- `client/README.md`
+- `server/src/modules/README.md`
+
+## Produccion
+
+Antes de desplegar:
+
+- cambia `JWT_SECRET`
+- cambia credenciales de base de datos
+- usa HTTPS detras de proxy reverso
+- manten `synchronize=false`
+- no expongas Adminer fuera de soporte interno
+- restringe impresoras de red a la LAN interna

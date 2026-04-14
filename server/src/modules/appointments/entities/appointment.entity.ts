@@ -5,36 +5,42 @@ import { Doctor } from '../../doctors/entities/doctor.entity';
 
 @Entity('citas')
 export class Appointment {
-  @PrimaryGeneratedColumn('uuid')
-  id_cita: string;
+  @PrimaryGeneratedColumn('uuid', { name: 'id_p' })
+  id: string;
 
-  @Column()
-  id_clinica: string;
+  @Column({ name: 'id_clinica', type: 'uuid' })
+  clinicId: string;
 
   @ManyToOne(() => Clinic)
   @JoinColumn({ name: 'id_clinica' })
-  clinica: Clinic;
+  clinic: Clinic;
 
-  @Column()
-  id_paciente: string;
+  @Column({ name: 'id_paciente', type: 'uuid' })
+  patientId: string;
 
   @ManyToOne(() => Patient)
   @JoinColumn({ name: 'id_paciente' })
-  paciente: Patient;
+  patient: Patient;
 
-  @Column()
-  id_doctor: string;
+  @Column({ name: 'id_doctor', type: 'uuid' })
+  doctorId: string;
 
   @ManyToOne(() => Doctor)
   @JoinColumn({ name: 'id_doctor' })
   doctor: Doctor;
 
-  @Column({ type: 'timestamp with time zone' })
-  fecha_hora: Date;
+  @Column({ type: 'date' })
+  fecha: string;
+
+  @Column({ type: 'time' })
+  hora: string;
 
   @Column({ length: 50, default: 'pendiente' })
-  estado: string; // 'pendiente', 'confirmada', 'cancelada', 'completada'
+  estado: string;
 
-  @CreateDateColumn()
-  created_at: Date;
+  @Column({ type: 'text', nullable: true })
+  motivo?: string | null;
+
+  @CreateDateColumn({ name: 'created_at', type: 'timestamptz' })
+  createdAt: Date;
 }

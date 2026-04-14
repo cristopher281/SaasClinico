@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FAFAFA;
+  --foreground: #111827; /* gray-900 */
+  --font-inter: 'Inter', sans-serif;
+  
+  --paper: #FFFFFF;
+  --border: #E5E7EB; /* gray-200 */
+  --muted: #6B7280; /* gray-500 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111827;
+    --foreground: #F9FAFB;
+    --paper: #1F2937;
+    --border: #374151;
+    --muted: #9CA3AF;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter); /* Enforced below by Next.js too */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base resets & utilities */
+@layer utilities {
+  .soft-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.025);
+  }
+}

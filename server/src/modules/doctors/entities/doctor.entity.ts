@@ -1,37 +1,54 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ManyToOne, JoinColumn } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  CreateDateColumn,
+  DeleteDateColumn,
+  ManyToOne,
+  JoinColumn,
+} from 'typeorm';
 import { Clinic } from '../../clinics/entities/clinic.entity';
 import { User } from '../../auth/entities/user.entity';
 import { Specialty } from './specialty.entity';
 
 @Entity('doctores')
 export class Doctor {
-  @PrimaryGeneratedColumn('uuid')
-  id_doctor: string;
+  @PrimaryGeneratedColumn('uuid', { name: 'id_p' })
+  id: string;
 
-  @Column()
-  id_clinica: string;
+  @Column({ name: 'id_clinica', type: 'uuid' })
+  clinicId: string;
 
   @ManyToOne(() => Clinic)
   @JoinColumn({ name: 'id_clinica' })
-  clinica: Clinic;
+  clinic: Clinic;
 
-  @Column()
-  id_usuario: string;
+  @Column({ name: 'id_usuario', type: 'uuid' })
+  userId: string;
 
   @ManyToOne(() => User)
   @JoinColumn({ name: 'id_usuario' })
-  usuario: User;
+  user: User;
 
-  @Column()
-  id_especialidad: string;
+  @Column({ name: 'id_especialidad', type: 'uuid', nullable: true })
+  specialtyId?: string | null;
 
   @ManyToOne(() => Specialty)
   @JoinColumn({ name: 'id_especialidad' })
-  especialidad: Specialty;
+  specialty?: Specialty | null;
 
-  @Column({ length: 50, nullable: true })
-  licencia_medica: string;
+  @Column({ length: 100, nullable: true })
+  licencia?: string | null;
 
-  @CreateDateColumn()
-  created_at: Date;
+  @Column({ length: 255, nullable: true })
+  opinion?: string | null;
+
+  @Column({ default: true })
+  activo: boolean;
+
+  @CreateDateColumn({ name: 'created_at', type: 'timestamptz' })
+  createdAt: Date;
+
+  @DeleteDateColumn({ name: 'deleted_at', type: 'timestamptz', nullable: true })
+  deletedAt?: Date | null;
 }

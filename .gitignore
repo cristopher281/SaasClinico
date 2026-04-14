@@ -1,4 +1,8 @@
 node_modules/
 dist/
 .env
+server/.env
+docker/.env
+prints/
 .DS_Store
+.idea/

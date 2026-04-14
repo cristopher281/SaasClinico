@@ -1,40 +1,30 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ManyToOne, JoinColumn, OneToOne } from 'typeorm';
-import { Clinic } from '../../clinics/entities/clinic.entity';
-import { Patient } from '../../patients/entities/patient.entity';
-import { Consultation } from '../../consultations/entities/consultation.entity';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
+import { Appointment } from '../../appointments/entities/appointment.entity';
 
 @Entity('facturas')
 export class Invoice {
-  @PrimaryGeneratedColumn('uuid')
-  id_factura: string;
+  @PrimaryGeneratedColumn('uuid', { name: 'id_p' })
+  id: string;
 
-  @Column()
-  id_clinica: string;
+  @Column({ name: 'id_cita', type: 'uuid' })
+  appointmentId: string;
 
-  @ManyToOne(() => Clinic)
-  @JoinColumn({ name: 'id_clinica' })
-  clinica: Clinic;
+  @ManyToOne(() => Appointment)
+  @JoinColumn({ name: 'id_cita' })
+  appointment: Appointment;
 
-  @Column()
-  id_paciente: string;
+  @Column({ length: 50 })
+  numero: string;
 
-  @ManyToOne(() => Patient)
-  @JoinColumn({ name: 'id_paciente' })
-  paciente: Patient;
+  @Column({ type: 'text', nullable: true })
+  concepto?: string | null;
 
-  @Column({ nullable: true })
-  id_consulta: string;
-
-  @OneToOne(() => Consultation)
-  @JoinColumn({ name: 'id_consulta' })
-  consulta: Consultation;
-
-  @Column({ type: 'decimal', precision: 10, scale: 2 })
-  total: number;
+  @Column({ name: 'cantidad_pago', type: 'decimal', precision: 12, scale: 2, nullable: true })
+  cantidadPago?: number | null;
 
   @Column({ length: 50, default: 'pendiente' })
-  estado: string; // 'pendiente', 'pagada', 'parcial', 'cancelada'
+  estado: string;
 
-  @CreateDateColumn()
-  created_at: Date;
+  @Column({ type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP' })
+  fecha: Date;
 }
